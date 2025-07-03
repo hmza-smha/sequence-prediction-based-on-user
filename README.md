@@ -1,4 +1,11 @@
-You now have multiple users, each with their own sequence of actions (e.g., ```[0, 1, 5, 1, 7, 8, ...]```), and you want to predict the next action for each user individually.
+You now have multiple users, each with their own sequence of actions, and you want to predict the next action for each user individually.
+
+```json
+all_users = {
+    'user_1': [0, 1, 5, 1, 7, 8],
+    'user_2': [2, 3, 4, 3, 6],
+    'user_3': [0, 1, 6, 7, 8],
+}```
 
 ## 🧠 Approaches
 
