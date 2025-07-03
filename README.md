@@ -1,6 +1,6 @@
 You now have multiple users, each with their own sequence of actions, and you want to predict the next action for each user individually.
 
-```json
+```txt
 all_users = {
     'user_1': [0, 1, 5, 1, 7, 8],
     'user_2': [2, 3, 4, 3, 6],
