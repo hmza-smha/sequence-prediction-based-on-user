@@ -1,4 +1,35 @@
-# Sequence prediction based on user
+You now have multiple users, each with their own sequence of actions (e.g., ```[0, 1, 5, 1, 7, 8, ...]```), and you want to predict the next action for each user individually.
+
+## 🧠 Approaches
+
+### ✅ **Train One Global Model (Shared across all users)**
+
+- All users’ data is used together.
+- The model learns general patterns in sequences.
+
+> 👉 This is the most common and practical approach.
+
+---
+
+### ✅ **Train a Separate Model per User**
+
+- Build a model for each individual user.
+- Useful if:
+  - Users have very different behaviors.
+  - You have **a lot of data per user**.
+  - You want **personalized predictions**.
+
+> 👉 More complex, but more personalized.
+
+#### 🧠 2. Can We Train Thousands of Models?
+> 🧠 **Yes**, you can create a model per user even for **thousands of users**, especially if the models are small (like lightweight LSTMs or Transformers).  
+
+
+### ✅ **One Model with User Embeddings**
+
+Instead of training thousands of models, consider using **one global model** that includes **user identity as an embedding**.
+
+#### Given data:
 
 ```python
 all_users = {
