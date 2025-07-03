@@ -9,6 +9,12 @@ You now have multiple users, each with their own sequence of actions (e.g., ```[
 
 > 👉 This is the most common and practical approach.
 
+Example:
+Input  →  Output
+[2, 3, 4] → [3] or [3,2]
+[3, 4, 3] → [6] or [5,1]
+[0, 1, 6] → [7] or [5,2]
+
 ---
 
 ### ✅ **Train a Separate Model per User**
