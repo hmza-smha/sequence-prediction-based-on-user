@@ -10,7 +10,7 @@ You now have multiple users, each with their own sequence of actions (e.g., ```[
 > 👉 This is the most common and practical approach.
 
 Example:
-```json
+```txt
 Input  →  Output
 [2, 3, 4] → [3] or [3,2]
 [3, 4, 3] → [6] or [5,1]
