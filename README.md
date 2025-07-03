@@ -193,6 +193,8 @@ Model returns the **most likely next action** for `user_1` after `[5, 1, 7]`.
 
 
 ### Python
+
+```python
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
@@ -311,3 +313,4 @@ def main():
 # === Run it ===
 if __name__ == "__main__":
     main()
+```
